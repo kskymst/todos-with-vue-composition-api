@@ -26,7 +26,7 @@ export default createComponent({
     }
 
     onMounted(() => {
-      console.log('mounted')
+      console.log('mounted') // eslint-disable-line
     })
 
     return {
