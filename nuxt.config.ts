@@ -29,7 +29,7 @@ const nuxtConfig: Configuration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/composition-api'],
+  plugins: ['~/plugins/compositionApi'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -59,7 +59,11 @@ const nuxtConfig: Configuration = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+  },
+  typescript: {
+    typeCheck: {
+      eslint: true
+    }
   }
 }
 
