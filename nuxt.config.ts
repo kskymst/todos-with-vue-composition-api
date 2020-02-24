@@ -1,4 +1,6 @@
-export default {
+import { Configuration } from '@nuxt/types'
+
+const nuxtConfig: Configuration = {
   mode: 'universal',
   /*
    ** Headers of the page
@@ -33,6 +35,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxt/typescript-build',
     '@nuxtjs/eslint-module'
   ],
   /*
@@ -59,3 +62,5 @@ export default {
     extend(config, ctx) {}
   }
 }
+
+module.exports = nuxtConfig
